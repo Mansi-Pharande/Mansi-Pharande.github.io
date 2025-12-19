@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - AI Portfolio</title>
+    <title>Mansi Pharande - AI Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
-            font-family: "Poppins", sans-serif;
             background: #0d1117;
+            font-family: "Poppins", sans-serif;
             color: #e6edf3;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
-            padding: 20px 40px;
+            padding: 15px 40px;
             background: #161b22;
             position: sticky;
             top: 0;
-            z-index: 10;
+            z-index: 100;
         }
 
         nav a {
-            color: #e6edf3;
             margin-left: 20px;
+            color: #e6edf3;
             text-decoration: none;
-            font-weight: 500;
         }
 
         nav a:hover {
@@ -44,23 +43,28 @@
         header h1 {
             font-size: 3rem;
             color: #58a6ff;
-            text-shadow: 0 0 15px #58a6ff;
+            text-shadow: 0 0 20px #58a6ff;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 1.2rem;
         }
 
         .btn {
             background: #58a6ff;
-            padding: 12px 20px;
-            display: inline-block;
-            margin-top: 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             color: black;
-            font-weight: 600;
+            margin-top: 20px;
+            display: inline-block;
             text-decoration: none;
+            font-weight: 600;
         }
 
         section {
             max-width: 900px;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 30px;
             background: #161b22;
             border-radius: 12px;
@@ -73,137 +77,142 @@
             color: #58a6ff;
         }
 
-        .project-card, .exp-card, .cert-card {
+        .project-card, .cert-card {
             background: #0f141a;
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #30363d;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
-        .project-card:hover, .exp-card:hover, .cert-card:hover {
-            border-color: #58a6ff;
+        .project-card img, .cert-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background: #161b22;
-            margin-top: 40px;
+            margin-top: 30px;
+            border-top: 1px solid #30363d;
         }
     </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION BAR -->
 <nav>
-    <div style="font-size: 1.2rem; font-weight: 600;">Your Name</div>
+    <div style="font-size:1.2rem;font-weight:600;">Mansi Pharande</div>
     <div>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#certs">Certificates</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
+<!-- HERO SECTION -->
 <header id="home">
-    <h1>Your Name</h1>
-    <p>Your Title (Example: AI | ML | Python)</p>
-    <a class="btn" href="#">View Projects</a>
+    <h1>Mansi Pharande</h1>
+    <p>B.Sc Artificial Intelligence Student | Python • ML • SQL</p>
+    <a href="#" class="btn">View Projects</a>
 </header>
 
+<!-- ABOUT ME -->
 <section id="about">
     <h2>About Me</h2>
     <p>
-        <!-- Write your About Me here -->
-        <!-- Keep as many lines as you want -->
+        <!-- WRITE YOUR ABOUT HERE -->
     </p>
 </section>
 
-<section id="experience">
-    <h2>Experience</h2>
+<!-- EDUCATION (Academic Journey like Yash Jain portfolio) -->
+<section id="education">
+    <h2>Academic Journey</h2>
 
-    <div class="exp-card">
-        <h3>Role / Internship Title</h3>
-        <p><strong>Organization:</strong> ______</p>
-        <p><strong>Duration:</strong> ______</p>
-        <ul>
-            <li><!-- Point 1 --></li>
-            <li><!-- Point 2 --></li>
-            <li><!-- Point 3 --></li>
-        </ul>
+    <div class="cert-card">
+        <h3>B.Sc Artificial Intelligence</h3>
+        <p><strong>University:</strong> _______</p>
+        <p><strong>Location:</strong> _______</p>
+        <p><strong>Duration:</strong> 2023 – 2026</p>
+        <p><strong>CGPA:</strong> _______</p>
     </div>
 
-    <div class="exp-card">
-        <h3>Role / Internship Title</h3>
-        <p><strong>Organization:</strong> ______</p>
-        <p><strong>Duration:</strong> ______</p>
-        <ul>
-            <li><!-- Point 1 --></li>
-            <li><!-- Point 2 --></li>
-            <li><!-- Point 3 --></li>
-        </ul>
+    <div class="cert-card">
+        <h3>HSC – Science</h3>
+        <p><strong>School:</strong> _______</p>
+        <p><strong>Year:</strong> 2023</p>
+        <p><strong>Percentage:</strong> _______</p>
     </div>
 
+    <div class="cert-card">
+        <h3>SSC</h3>
+        <p><strong>School:</strong> _______</p>
+        <p><strong>Year:</strong> 2021</p>
+        <p><strong>Percentage:</strong> _______</p>
+    </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
     <div class="project-card">
-        <h3>Project Title</h3>
-        <p><!-- Description --></p>
-        <p><strong>Tech Used:</strong> ______</p>
-        <a href="#" style="color:#58a6ff;">Code</a> |
+        <img src="project1.jpg" alt="Project Image Placeholder">
+        <h3>Disease Prediction System (Machine Learning)</h3>
+        <p><!-- Add description here --></p>
+        <p><strong>Tech Used:</strong> Python, ML, Scikit-learn</p>
+        <a href="#" style="color:#58a6ff;">GitHub</a> |
         <a href="#" style="color:#58a6ff;">Demo</a>
     </div>
 
     <div class="project-card">
-        <h3>Project Title</h3>
-        <p><!-- Description --></p>
-        <p><strong>Tech Used:</strong> ______</p>
-        <a href="#" style="color:#58a6ff;">Code</a> |
+        <img src="project2.jpg" alt="Project Image Placeholder">
+        <h3>Bank Management System (Python OOP)</h3>
+        <p><!-- Add description here --></p>
+        <p><strong>Tech Used:</strong> Python, OOP</p>
+        <a href="#" style="color:#58a6ff;">GitHub</a> |
         <a href="#" style="color:#58a6ff;">Demo</a>
     </div>
 
     <div class="project-card">
-        <h3>Project Title</h3>
-        <p><!-- Description --></p>
-        <p><strong>Tech Used:</strong> ______</p>
-        <a href="#" style="color:#58a6ff;">Code</a> |
+        <img src="project3.jpg" alt="Project Image Placeholder">
+        <h3>Student Record System</h3>
+        <p><!-- Add description here --></p>
+        <p><strong>Tech Used:</strong> Python</p>
+        <a href="#" style="color:#58a6ff;">GitHub</a> |
         <a href="#" style="color:#58a6ff;">Demo</a>
     </div>
-
 </section>
 
+<!-- CERTIFICATES -->
 <section id="certs">
-    <h2>Certificates</h2>
+    <h2>Certificates & Credentials</h2>
 
     <div class="cert-card">
-        <h3>Certificate Title</h3>
-        <p>Provider: ______</p>
-        <a href="#" style="color:#58a6ff;">Download</a>
-    </div>
-
-    <div class="cert-card">
-        <h3>Certificate Title</h3>
-        <p>Provider: ______</p>
-        <a href="#" style="color:#58a6ff;">Download</a>
+        <img src="cert1.jpg" alt="Certificate Image">
+        <h3>TCS iON Career Edge – Young Professional</h3>
+        <a href="#" style="color:#58a6ff;">View Certificate</a>
     </div>
 
 </section>
 
+<!-- CONTACT SECTION -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> ______</p>
-    <p><strong>LinkedIn:</strong> ______</p>
-    <p><strong>GitHub:</strong> ______</p>
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> mansipharande78@gmail.com</p>
+    <p><strong>Phone:</strong> 8605159731</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mansi-pharande-52452034b/" style="color:#58a6ff;">Click Here</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Mansi-Pharande" style="color:#58a6ff;">Click Here</a></p>
 </section>
 
 <footer>
-    © 2025 Your Name. All rights reserved.
+    © 2025 Mansi Pharande. All rights reserved.
 </footer>
 
 </body>
