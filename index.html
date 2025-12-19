@@ -14,6 +14,7 @@
             font-family: "Poppins", sans-serif;
             background: #0d1117;
             color: #e6edf3;
+            overflow-x: hidden;
         }
 
         /* NAVIGATION */
@@ -25,6 +26,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 1px solid #30363d;
         }
 
         nav a {
@@ -35,10 +37,10 @@
         }
 
         nav a:hover {
-            color: #58a6ff;
+            color: #00eaff;
         }
 
-        /* HERO SECTION */
+        /* HERO */
         header {
             text-align: center;
             padding: 100px 20px;
@@ -90,7 +92,7 @@
             margin-top: 25px;
         }
 
-        /* SECTION STYLING */
+        /* SECTIONS */
         section {
             max-width: 900px;
             margin: 40px auto;
@@ -112,27 +114,43 @@
             border-radius: 10px;
             border: 1px solid #30363d;
             margin-bottom: 20px;
+            text-align: center;
         }
 
+        /* SMALL IMAGES */
         .card img {
-            width: 100%;
+            width: 280px;
+            max-width: 95%;
+            height: auto;
             border-radius: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px #0aefff60;
         }
 
-        /* FOOTER */
+        /* SCROLL ANIMATIONS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background: #161b22;
-            margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
     </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
     <div style="font-size: 1.3rem; font-weight: 600;">Mansi Pharande</div>
     <div>
@@ -145,11 +163,11 @@
 </nav>
 
 <!-- HERO -->
-<header id="home">
-    <img class="profile-img" src="https://images.unsplash.com/photo-1581092334630-1e7a6d02f7f6?auto=format&fit=crop&w=300&q=80" alt="profile" />
+<header id="home" class="fade-in">
+    <img class="profile-img" src="https://images.unsplash.com/photo-1581092334630-1e7a6d02f7f6?auto=format&fit=crop&w=300&q=80" />
 
     <h1>Mansi Pharande</h1>
-    <h3>B.Sc Artificial Intelligence Student • Final Year Student</h3>
+    <h3>B.Sc Artificial Intelligence Student • Final Year</h3>
 
     <div class="tagline">
         Building Intelligent Systems for Real-World Impact
@@ -158,11 +176,12 @@
     <a href="#projects" class="btn">View Projects</a>
 </header>
 
+
 <!-- EDUCATION -->
-<section id="education">
+<section id="education" class="fade-in">
     <h2>Academic Journey</h2>
 
-    <div class="card">
+    <div class="card fade-in">
         <h3>B.Sc Artificial Intelligence</h3>
         <p><strong>University:</strong> Yashwantrao Chavan Institute of Science, Satara</p>
         <p><strong>Location:</strong> Satara, Maharashtra</p>
@@ -170,14 +189,14 @@
         <p><strong>CGPA:</strong> 9.0</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
         <h3>HSC – Science</h3>
         <p><strong>School:</strong> Disha Public School & Junior College</p>
         <p><strong>Year:</strong> 2023</p>
         <p><strong>Percentage:</strong> 64.67%</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
         <h3>SSC</h3>
         <p><strong>School:</strong> Tiranga English School, Panchwad</p>
         <p><strong>Year:</strong> 2021</p>
@@ -185,57 +204,80 @@
     </div>
 </section>
 
+
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="fade-in">
     <h2>Projects</h2>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=900&q=80" alt="">
+    <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80">
         <h3>Disease Prediction System (ML)</h3>
-        <p><!-- Add description --></p>
+        <p><!-- description --></p>
         <p><strong>Tech:</strong> Python, ML, Pandas, Scikit-learn</p>
     </div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=80" alt="">
+    <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=600&q=80">
         <h3>Bank Management System (Python OOP)</h3>
-        <p><!-- Add description --></p>
-        <p><strong>Tech:</strong> Python, OOP, File Handling</p>
+        <p><!-- description --></p>
+        <p><strong>Tech:</strong> Python, OOP</p>
     </div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="">
+    <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80">
         <h3>Student Record System</h3>
-        <p><!-- Add description --></p>
+        <p><!-- description --></p>
         <p><strong>Tech:</strong> Python</p>
     </div>
 </section>
 
+
 <!-- CERTIFICATES -->
-<section id="certs">
+<section id="certs" class="fade-in">
     <h2>Certificates</h2>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1581091215367-59ab6b36c55f?auto=format&fit=crop&w=900&q=80" alt="">
+    <div class="card fade-in">
+        <img src="https://images.unsplash.com/photo-1581091215367-59ab6b36c55f?auto=format&fit=crop&w=600&q=80">
         <h3>TCS iON Career Edge – Young Professional</h3>
         <a href="#" style="color:#00eaff;">View Certificate</a>
     </div>
-
 </section>
 
+
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="fade-in">
     <h2>Contact Me</h2>
 
     <p><strong>Email:</strong> mansipharande78@gmail.com</p>
     <p><strong>Phone:</strong> 8605159731</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mansi-pharande-52452034b/" style="color:#00eaff;">Click Here</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Mansi-Pharande" style="color:#00eaff;">Click Here</a></p>
+    <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/mansi-pharande-52452034b/" style="color:#00eaff;">Click Here</a>
+    </p>
+    <p><strong>GitHub:</strong> 
+        <a href="https://github.com/Mansi-Pharande" style="color:#00eaff;">Click Here</a>
+    </p>
 </section>
 
 <footer>
     © 2025 Mansi Pharande. All rights reserved.
 </footer>
+
+<!-- SCROLL ANIMATION JS -->
+<script>
+    const elements = document.querySelectorAll('.fade-in');
+
+    function reveal() {
+        elements.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < window.innerHeight - 100) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', reveal);
+    reveal();
+</script>
 
 </body>
 </html>
